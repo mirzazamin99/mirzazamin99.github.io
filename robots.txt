@@ -1,0 +1,20 @@
+User-agent: *
+
+# Allow all pages
+Allow: /
+
+# Prevent crawling of unnecessary files/folders (if they exist)
+Disallow: /node_modules/
+Disallow: /.git/
+Disallow: /.github/
+Disallow: /private/
+Disallow: /temp/
+
+# Crawl delay (optional)
+Crawl-delay: 2
+
+# Sitemap location
+Sitemap: https://mirzazamin99.github.io/sitemap.xml
+
+# Host
+Host: https://mirzazamin99.github.io
