@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mirza Zamin — Data Analytics, AI &amp; Machine Learning Portfolio</title>
+<meta name="description" content="Portfolio of Mirza Zamin, a Data Analytics &amp; AI practitioner from Jammu &amp; Kashmir, India. Skilled in Python, SQL, Power BI, Machine Learning, Prompt Engineering and Generative AI.">
+<meta name="keywords" content="Mirza Zamin, Data Analyst, Data Science, Machine Learning, AI, Power BI, Python, SQL, Prompt Engineering, Generative AI, Kashmir, University of Kashmir">
+<meta name="author" content="Mirza Zamin">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://mirzazamin99.github.io/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Mirza Zamin — Data Analytics, AI &amp; Machine Learning Portfolio">
+<meta property="og:description" content="Data Analytics &amp; AI practitioner from Jammu &amp; Kashmir, India. Python · SQL · Power BI · Machine Learning · Generative AI.">
+<meta property="og:url" content="https://mirzazamin99.github.io/">
+<meta property="og:site_name" content="Mirza Zamin Portfolio">
+<meta property="og:locale" content="en_IN">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Mirza Zamin — Data Analytics, AI &amp; Machine Learning Portfolio">
+<meta name="twitter:description" content="Data Analytics &amp; AI practitioner from Jammu &amp; Kashmir, India. Python · SQL · Power BI · Machine Learning · Generative AI.">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230B1826'/%3E%3Cpath d='M10 42 L24 22 L34 34 L44 18 L56 42 Z' fill='none' stroke='%234FC1D9' stroke-width='3' stroke-linejoin='round'/%3E%3Ccircle cx='44' cy='18' r='3' fill='%23E8A33D'/%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Mirza Zamin",
+  "url": "https://mirzazamin99.github.io/",
+  "sameAs": [
+    "https://www.linkedin.com/in/mirzazamin99/",
+    "https://github.com/mirzazamin99"
+  ],
+  "jobTitle": "Data Analytics & AI Practitioner",
+  "alumniOf": {
+    "@type": "CollegeOrUniversity",
+    "name": "University of Kashmir"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressRegion": "Jammu and Kashmir",
+    "addressCountry": "IN"
+  },
+  "email": "mailto:mirzazamin99@gmail.com",
+  "knowsAbout": ["Python", "SQL", "Power BI", "Machine Learning", "Natural Language Processing", "Generative AI", "Prompt Engineering", "Data Analysis", "Web Scraping"]
+}
+</script>
+
+<style>
+  :root{
+    --ink:#0B1826;
+    --ink-soft:#102233;
+    --ink-soft-2:#132A3E;
+    --line: rgba(234,241,245,0.09);
+    --mist:#EAF1F5;
+    --slate:#95ABBF;
+    --slate-dim:#6C8194;
+    --glacier:#4FC1D9;
+    --glacier-dim: rgba(79,193,217,0.14);
+    --saffron:#E8A33D;
+    --saffron-dim: rgba(232,163,61,0.14);
+    --radius: 14px;
+    --max: 1120px;
+    --disp: 'Space Grotesk', sans-serif;
+    --body: 'IBM Plex Sans', sans-serif;
+    --mono: 'IBM Plex Mono', monospace;
+  }
+
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--ink);
+    color:var(--mist);
+    font-family:var(--body);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  img,svg{display:block; max-width:100%;}
+  a{color:inherit; text-decoration:none;}
+  ul{list-style:none;}
+
+  .skip-link{
+    position:absolute; left:-999px; top:0; background:var(--glacier); color:var(--ink);
+    padding:.6rem 1rem; z-index:200; font-family:var(--mono); font-size:.85rem;
+  }
+  .skip-link:focus{left:1rem; top:1rem;}
+
+  :focus-visible{outline:2px solid var(--glacier); outline-offset:3px;}
+
+  .container{max-width:var(--max); margin:0 auto; padding:0 1.5rem;}
+
+  .eyebrow{
+    font-family:var(--mono); font-size:.78rem; letter-spacing:.14em; text-transform:uppercase;
+    color:var(--glacier); display:flex; align-items:center; gap:.6rem; margin-bottom:.9rem;
+  }
+  .eyebrow::before{content:""; width:22px; height:1px; background:var(--glacier);}
+
+  h1,h2,h3{font-family:var(--disp); font-weight:600; letter-spacing:-0.01em; color:var(--mist);}
+  h2{font-size:clamp(1.6rem,3.4vw,2.3rem); margin-bottom:.6rem;}
+  .section-intro{color:var(--slate); max-width:52ch; margin-bottom:2.6rem;}
+
+  section{padding:5.5rem 0;}
+  section + section{border-top:1px solid var(--line);}
+
+  /* ---------- NAV ---------- */
+  header.site{
+    position:sticky; top:0; z-index:100;
+    background:rgba(11,24,38,0.82); backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  nav.container{
+    display:flex; align-items:center; justify-content:space-between;
+    padding-top:1rem; padding-bottom:1rem;
+  }
+  .logo{
+    font-family:var(--mono); font-weight:500; font-size:1rem; color:var(--mist);
+    display:flex; align-items:center; gap:.5rem;
+  }
+  .logo .dot{width:8px; height:8px; border-radius:50%; background:var(--saffron);}
+  .nav-links{display:flex; gap:2rem; font-size:.92rem;}
+  .nav-links a{color:var(--slate); transition:color .2s;}
+  .nav-links a:hover{color:var(--glacier);}
+  .nav-cta{
+    font-family:var(--mono); font-size:.82rem; padding:.5rem 1rem; border:1px solid var(--glacier);
+    border-radius:999px; color:var(--glacier); transition: all .2s;
+  }
+  .nav-cta:hover{background:var(--glacier); color:var(--ink);}
+
+  .nav-toggle{display:none;}
+  #nav-check{display:none;}
+
+  @media (max-width:820px){
+    .nav-links{
+      position:fixed; inset:64px 0 auto 0; flex-direction:column; gap:0;
+      background:var(--ink-soft); border-bottom:1px solid var(--line);
+      transform:translateY(-130%); transition:transform .3s ease; padding:.5rem 1.5rem 1.2rem;
+    }
+    .nav-links a{padding:.85rem 0; border-bottom:1px solid var(--line);}
+    #nav-check:checked ~ .nav-links{transform:translateY(0);}
+    .nav-toggle{
+      display:flex; flex-direction:column; gap:5px; width:26px; cursor:pointer; z-index:110;
+    }
+    .nav-toggle span{height:2px; background:var(--mist); border-radius:2px; transition:.25s;}
+    #nav-check:checked ~ .nav-toggle span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+    #nav-check:checked ~ .nav-toggle span:nth-child(2){opacity:0;}
+    #nav-check:checked ~ .nav-toggle span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+  }
+
+  /* ---------- HERO ---------- */
+  .hero{
+    position:relative; padding:6rem 0 5rem; overflow:hidden; border-top:none;
+  }
+  .hero-bg{position:absolute; inset:0; z-index:0; opacity:.5; pointer-events:none;}
+  .hero .container{
+    position:relative; z-index:1; display:grid; grid-template-columns:1.15fr .85fr; gap:3rem; align-items:center;
+  }
+  .hero-name{font-size:clamp(2.4rem,6vw,3.6rem); line-height:1.05;}
+  .hero-name .accent{color:var(--glacier);}
+  .hero-title{
+    font-family:var(--mono); color:var(--slate); font-size:1.02rem; margin:1.1rem 0 1.4rem;
+  }
+  .hero-lede{color:var(--slate); max-width:46ch; margin-bottom:2rem;}
+  .hero-actions{display:flex; flex-wrap:wrap; gap:.9rem;}
+
+  .btn{
+    font-family:var(--body); font-weight:500; font-size:.95rem; padding:.85rem 1.4rem;
+    border-radius:10px; display:inline-flex; align-items:center; gap:.5rem; transition:.2s;
+  }
+  .btn-primary{background:var(--glacier); color:var(--ink);}
+  .btn-primary:hover{background:#6FD3E8; transform:translateY(-1px);}
+  .btn-outline{border:1px solid var(--line); color:var(--mist);}
+  .btn-outline:hover{border-color:var(--glacier); color:var(--glacier);}
+
+  .status-pill{
+    display:inline-flex; align-items:center; gap:.5rem; font-family:var(--mono); font-size:.78rem;
+    color:var(--saffron); background:var(--saffron-dim); padding:.4rem .8rem; border-radius:999px; margin-bottom:1.4rem;
+  }
+  .status-pill .pulse{
+    width:7px; height:7px; border-radius:50%; background:var(--saffron); position:relative;
+  }
+  .status-pill .pulse::after{
+    content:""; position:absolute; inset:-4px; border-radius:50%; border:1px solid var(--saffron);
+    animation:pulse 2s ease-out infinite;
+  }
+  @keyframes pulse{0%{transform:scale(.6); opacity:1;} 100%{transform:scale(1.8); opacity:0;}}
+
+  /* terminal card */
+  .terminal{
+    background:var(--ink-soft); border:1px solid var(--line); border-radius:var(--radius);
+    box-shadow:0 30px 60px -30px rgba(0,0,0,.6); overflow:hidden;
+  }
+  .terminal-bar{
+    display:flex; align-items:center; gap:.4rem; padding:.75rem 1rem; border-bottom:1px solid var(--line);
+    background:var(--ink-soft-2);
+  }
+  .terminal-bar span{width:10px; height:10px; border-radius:50%; background:var(--line);}
+  .terminal-bar span:nth-child(1){background:#E8636A;}
+  .terminal-bar span:nth-child(2){background:#E8B23D;}
+  .terminal-bar span:nth-child(3){background:#57C68B;}
+  .terminal-bar .file{margin-left:.6rem; font-family:var(--mono); font-size:.75rem; color:var(--slate-dim);}
+  .terminal-body{
+    padding:1.4rem; font-family:var(--mono); font-size:.86rem; min-height:280px;
+  }
+  .term-line{margin-bottom:1.05rem;}
+  .term-prompt{color:var(--glacier);}
+  .term-out{color:var(--mist); white-space:pre-wrap;}
+  .term-caret{display:inline-block; width:7px; height:1em; background:var(--glacier); vertical-align:-2px; animation:blink 1s steps(1) infinite;}
+  @keyframes blink{50%{opacity:0;}}
+
+  /* ---------- ABOUT ---------- */
+  .about-grid{display:grid; grid-template-columns:1.3fr .9fr; gap:3rem; align-items:start;}
+  .about-copy p{color:var(--slate); margin-bottom:1rem; max-width:56ch;}
+  .about-copy p strong{color:var(--mist); font-weight:500;}
+  .fact-list{
+    display:grid; grid-template-columns:1fr 1fr; gap:1.4rem 1.5rem; padding:1.6rem; background:var(--ink-soft);
+    border:1px solid var(--line); border-radius:var(--radius);
+  }
+  .fact-list div{grid-column:span 2; display:flex; flex-direction:column; gap:.15rem;}
+  .fact-label{font-family:var(--mono); font-size:.72rem; text-transform:uppercase; letter-spacing:.1em; color:var(--slate-dim);}
+  .fact-value{font-size:.95rem;}
+  .fact-value a{color:var(--glacier); border-bottom:1px solid transparent;}
+  .fact-value a:hover{border-color:var(--glacier);}
+
+  /* ---------- SKILLS ---------- */
+  .skill-modules{display:grid; grid-template-columns:repeat(4,1fr); gap:1.4rem;}
+  .skill-card{
+    background:var(--ink-soft); border:1px solid var(--line); border-radius:var(--radius); padding:1.6rem;
+    transition:.25s;
+  }
+  .skill-card:hover{border-color:var(--glacier); transform:translateY(-3px);}
+  .skill-card .module-index{font-family:var(--mono); font-size:.75rem; color:var(--slate-dim); margin-bottom:.7rem;}
+  .skill-card h3{font-size:1.05rem; margin-bottom:.3rem;}
+  .skill-card .module-desc{color:var(--slate); font-size:.86rem; margin-bottom:1.1rem;}
+  .chip-row{display:flex; flex-wrap:wrap; gap:.5rem;}
+  .chip{
+    font-family:var(--mono); font-size:.78rem; padding:.35rem .7rem; border-radius:7px;
+    background:var(--glacier-dim); color:var(--glacier); border:1px solid transparent;
+  }
+
+  /* ---------- EXPERIENCE ---------- */
+  .timeline{position:relative; padding-left:2rem;}
+  .timeline::before{content:""; position:absolute; left:6px; top:6px; bottom:6px; width:1px; background:var(--line);}
+  .t-item{position:relative; padding-bottom:2.6rem;}
+  .t-item:last-child{padding-bottom:0;}
+  .t-item::before{
+    content:""; position:absolute; left:-2rem; top:5px; width:11px; height:11px; border-radius:50%;
+    background:var(--ink); border:2px solid var(--glacier);
+  }
+  .t-head{display:flex; flex-wrap:wrap; align-items:baseline; gap:.6rem; margin-bottom:.35rem;}
+  .t-head h3{font-size:1.08rem;}
+  .t-period{font-family:var(--mono); font-size:.78rem; color:var(--slate-dim);}
+  .t-org{font-size:.88rem; color:var(--glacier); margin-bottom:.6rem; font-weight:500;}
+  .t-desc{color:var(--slate); max-width:58ch; font-size:.94rem;}
+  .t-tags{display:flex; flex-wrap:wrap; gap:.45rem; margin-top:.7rem;}
+  .t-tags span{
+    font-family:var(--mono); font-size:.72rem; padding:.25rem .55rem; border:1px solid var(--line);
+    border-radius:6px; color:var(--slate);
+  }
+
+  /* ---------- EDUCATION ---------- */
+  .edu-card{
+    display:flex; justify-content:space-between; align-items:flex-start; gap:2rem; flex-wrap:wrap;
+    background:var(--ink-soft); border:1px solid var(--line); border-radius:var(--radius); padding:1.8rem 2rem;
+  }
+  .edu-card h3{font-size:1.15rem; margin-bottom:.3rem;}
+  .edu-card .t-period{margin-top:.3rem;}
+  .edu-card p{color:var(--slate); font-size:.92rem;}
+
+  /* ---------- CERTS ---------- */
+  .cert-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:1.2rem;}
+  .cert-card{
+    background:var(--ink-soft); border:1px solid var(--line); border-radius:var(--radius);
+    padding:1.4rem; display:flex; flex-direction:column; gap:.55rem; transition:.25s;
+  }
+  .cert-card:hover{border-color:var(--saffron); transform:translateY(-3px);}
+  .cert-icon{
+    width:34px; height:34px; border-radius:8px; background:var(--saffron-dim); color:var(--saffron);
+    display:flex; align-items:center; justify-content:center; font-family:var(--mono); font-size:.8rem; font-weight:600;
+  }
+  .cert-card h3{font-size:.98rem; line-height:1.3;}
+  .cert-issuer{font-size:.83rem; color:var(--slate);}
+  .cert-date{font-family:var(--mono); font-size:.72rem; color:var(--slate-dim); margin-top:auto;}
+
+  /* ---------- PROJECTS / GITHUB ---------- */
+  .repo-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:1.2rem;}
+  .repo-card{
+    background:var(--ink-soft); border:1px solid var(--line); border-radius:var(--radius);
+    padding:1.4rem; display:flex; flex-direction:column; gap:.6rem;
+  }
+  .repo-card h3{font-size:1rem;}
+  .repo-card p{color:var(--slate); font-size:.85rem; flex-grow:1;}
+  .repo-meta{display:flex; gap:1rem; font-family:var(--mono); font-size:.75rem; color:var(--slate-dim);}
+  .repo-meta span{display:flex; align-items:center; gap:.3rem;}
+  #repo-status{color:var(--slate); font-family:var(--mono); font-size:.85rem;}
+
+  /* ---------- CONTACT / FOOTER ---------- */
+  footer.site{padding:5.5rem 0 3rem; border-top:1px solid var(--line);}
+  .contact-wrap{
+    display:flex; justify-content:space-between; align-items:flex-end; gap:2rem; flex-wrap:wrap;
+    margin-bottom:3.5rem;
+  }
+  .contact-wrap h2{max-width:14ch;}
+  .contact-links{display:flex; flex-direction:column; gap:.9rem;}
+  .contact-links a{
+    display:flex; align-items:center; gap:.7rem; font-family:var(--mono); font-size:.95rem; color:var(--mist);
+  }
+  .contact-links a svg{color:var(--glacier); flex-shrink:0;}
+  .contact-links a:hover{color:var(--glacier);}
+  .foot-bottom{
+    display:flex; justify-content:space-between; flex-wrap:wrap; gap:1rem; padding-top:2rem;
+    border-top:1px solid var(--line); color:var(--slate-dim); font-size:.82rem; font-family:var(--mono);
+  }
+
+  /* reveal */
+  .reveal{opacity:0; transform:translateY(18px); transition:opacity .6s ease, transform .6s ease;}
+  .reveal.in-view{opacity:1; transform:translateY(0);}
+  @media (prefers-reduced-motion: reduce){
+    .reveal{opacity:1; transform:none; transition:none;}
+    .status-pill .pulse::after{animation:none;}
+    .term-caret{animation:none;}
+  }
+
+  /* ---------- RESPONSIVE ---------- */
+  @media (max-width:980px){
+    .hero .container{grid-template-columns:1fr; gap:2.6rem;}
+    .about-grid{grid-template-columns:1fr;}
+    .skill-modules{grid-template-columns:1fr 1fr;}
+    .cert-grid, .repo-grid{grid-template-columns:1fr 1fr;}
+  }
+  @media (max-width:640px){
+    section{padding:3.6rem 0;}
+    .skill-modules{grid-template-columns:1fr;}
+    .cert-grid, .repo-grid{grid-template-columns:1fr;}
+    .fact-list{grid-template-columns:1fr;}
+    .fact-list div{grid-column:span 1;}
+    .contact-wrap{flex-direction:column; align-items:flex-start;}
+    .edu-card{flex-direction:column;}
+  }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site">
+  <nav class="container">
+    <a class="logo" href="#top" aria-label="Mirza Zamin — home"><span class="dot"></span>mirza.zamin</a>
+    <input type="checkbox" id="nav-check" aria-hidden="true">
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#work">Projects</a></li>
+      <li><a href="#projects">GitHub</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <label class="nav-toggle" for="nav-check" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </label>
+    <a class="nav-cta" href="mailto:mirzazamin99@gmail.com" style="display:none" id="nav-cta-desktop">Say hello</a>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <svg class="hero-bg" viewBox="0 0 1200 500" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0,380 C150,300 250,420 380,340 C500,270 560,380 700,300 C820,240 900,340 1050,260 C1120,220 1160,260 1200,240" fill="none" stroke="#4FC1D9" stroke-opacity="0.18" stroke-width="1.5"/>
+      <path d="M0,420 C160,360 260,450 400,380 C520,320 580,420 720,350 C840,290 920,380 1070,300 C1130,270 1170,300 1200,285" fill="none" stroke="#4FC1D9" stroke-opacity="0.12" stroke-width="1.5"/>
+      <path d="M0,460 C170,410 270,480 420,420 C540,370 600,450 740,390 C860,340 940,410 1090,340 C1140,315 1175,335 1200,325" fill="none" stroke="#E8A33D" stroke-opacity="0.10" stroke-width="1.5"/>
+    </svg>
+    <div class="container">
+      <div class="hero-copy reveal">
+        <span class="status-pill"><span class="pulse"></span>Open to work — Hybrid / Remote</span>
+        <h1 class="hero-name">Mirza <span class="accent">Zamin</span></h1>
+        <p class="hero-title">Data Analytics · AI · Machine Learning — Jammu &amp; Kashmir, India</p>
+        <p class="hero-lede">I turn raw data into decisions — Python and SQL for the groundwork, Power BI for the story, and machine learning and generative AI for what comes next. Hands-on with data cleaning, exploratory analysis, web scraping and dashboard development, gained through applied projects and instructional work at ILS Srinagar. Seeking an entry-level Data Scientist / Machine Learning role.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#contact">Get in touch</a>
+          <a class="btn btn-outline" href="https://github.com/mirzazamin99" target="_blank" rel="noopener noreferrer">View GitHub</a>
+          <a class="btn btn-outline" href="https://www.linkedin.com/in/mirzazamin99/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+      </div>
+
+      <div class="terminal reveal" aria-label="Quick profile summary">
+        <div class="terminal-bar">
+          <span></span><span></span><span></span>
+          <span class="file">profile.sh</span>
+        </div>
+        <div class="terminal-body" id="terminal-body"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="reveal">
+          <span class="eyebrow">About</span>
+          <h2>Grounded in data, reaching toward AI</h2>
+          <div class="about-copy">
+            <p>I'm a <strong>Bachelor of Computer Applications</strong> graduate from the <strong>University of Kashmir</strong>, currently building a career at the intersection of data analytics and applied AI. My work so far has moved from core analysis — cleaning, querying, and visualizing data — toward machine learning and generative AI.</p>
+            <p>At <strong>ILS, Srinagar</strong>, I've worked as a Data Science Trainee and gone on to train other learners in <strong>Python, Power BI, Matplotlib, and Seaborn</strong>, building hands-on exercises that mirror real analysis workflows and simplifying core ML concepts for beginners.</p>
+            <p>Alongside that, I build my own projects — from web scrapers to exploratory analysis to interactive dashboards — and keep my skills current through certifications in SQL, prompt engineering, responsible AI, and generative AI from IBM, Google Cloud, and TCS iON. I'm now looking for an <strong>entry-level Data Scientist / Machine Learning role</strong> to apply these skills to real business problems.</p>
+          </div>
+        </div>
+        <div class="fact-list reveal">
+          <div>
+            <span class="fact-label">Location</span>
+            <span class="fact-value">Jammu &amp; Kashmir, India</span>
+          </div>
+          <div>
+            <span class="fact-label">Focus areas</span>
+            <span class="fact-value">Data Analytics · Machine Learning · Generative AI</span>
+          </div>
+          <div>
+            <span class="fact-label">Education</span>
+            <span class="fact-value">BCA, University of Kashmir (2022–2025)</span>
+          </div>
+          <div>
+            <span class="fact-label">Email</span>
+            <span class="fact-value"><a href="mailto:mirzazamin99@gmail.com">mirzazamin99@gmail.com</a></span>
+          </div>
+          <div>
+            <span class="fact-label">Phone</span>
+            <span class="fact-value"><a href="tel:+919541113694">+91 95411 13694</a></span>
+          </div>
+          <div>
+            <span class="fact-label">Availability</span>
+            <span class="fact-value">Open to work — India, Hybrid / Remote</span>
+          </div>
+          <div>
+            <span class="fact-label">Languages</span>
+            <span class="fact-value">English, Urdu</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="container">
+      <span class="eyebrow reveal">Skills</span>
+      <h2 class="reveal">Three toolkits, one workflow</h2>
+      <p class="section-intro reveal">From wrangling raw tables to explaining a model's output — the tools I reach for at each stage.</p>
+      <div class="skill-modules">
+        <div class="skill-card reveal">
+          <div class="module-index">01 · Foundation</div>
+          <h3>Languages &amp; Analysis</h3>
+          <p class="module-desc">Where every project starts — querying, cleaning, and shaping data.</p>
+          <div class="chip-row">
+            <span class="chip">Python</span>
+            <span class="chip">SQL</span>
+            <span class="chip">Pandas</span>
+            <span class="chip">NumPy</span>
+            <span class="chip">Data Cleaning</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="module-index">02 · Communication</div>
+          <h3>Visualization &amp; BI</h3>
+          <p class="module-desc">Turning tables into decisions people can act on.</p>
+          <div class="chip-row">
+            <span class="chip">Power BI</span>
+            <span class="chip">Matplotlib</span>
+            <span class="chip">Seaborn</span>
+            <span class="chip">Microsoft Excel</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="module-index">03 · Frontier</div>
+          <h3>AI &amp; Machine Learning</h3>
+          <p class="module-desc">Where I'm currently pushing deepest.</p>
+          <div class="chip-row">
+            <span class="chip">Machine Learning</span>
+            <span class="chip">NLP</span>
+            <span class="chip">LLMs</span>
+            <span class="chip">Generative AI</span>
+            <span class="chip">Prompt Engineering</span>
+            <span class="chip">Responsible AI</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="module-index">04 · Workflow</div>
+          <h3>Tools &amp; Platforms</h3>
+          <p class="module-desc">What runs behind every project, day to day.</p>
+          <div class="chip-row">
+            <span class="chip">Jupyter Notebook</span>
+            <span class="chip">Git</span>
+            <span class="chip">GitHub</span>
+            <span class="chip">ChatGPT</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="container">
+      <span class="eyebrow reveal">Experience</span>
+      <h2 class="reveal">A year at ILS, and counting</h2>
+      <p class="section-intro reveal">A path from trainee to teacher — practicing the fundamentals well enough to hand them off to others.</p>
+      <div class="timeline reveal">
+        <div class="t-item">
+          <div class="t-head">
+            <h3>Data Science &amp; AI Diploma — Instructor</h3>
+            <span class="t-period">Aug 2025 – Present · 1 yr</span>
+          </div>
+          <div class="t-org">ILS, Srinagar</div>
+          <p class="t-desc">Trained learners in Python, Power BI, Matplotlib and Seaborn as part of a structured data science curriculum. Designed hands-on exercises and guided students through end-to-end data analysis and visualization workflows, simplifying core data science and ML concepts for beginners.</p>
+          <div class="t-tags"><span>Python</span><span>Power BI</span><span>Seaborn</span><span>Teaching</span></div>
+        </div>
+        <div class="t-item">
+          <div class="t-head">
+            <h3>Data Science Trainee</h3>
+            <span class="t-period">Aug 2025 – Present · Apprenticeship</span>
+          </div>
+          <div class="t-org">ILS, Srinagar</div>
+          <p class="t-desc">Applied SQL and data analysis fundamentals to real datasets as part of a structured apprenticeship track alongside instructional work.</p>
+          <div class="t-tags"><span>SQL</span><span>Data Analysis</span></div>
+        </div>
+        <div class="t-item">
+          <div class="t-head">
+            <h3>Student</h3>
+            <span class="t-period">Sep 2025 · 1 mo · Full-time, On-site, India</span>
+          </div>
+          <div class="t-org">ILS</div>
+          <p class="t-desc">Intensive study covering data structures &amp; algorithms alongside applied, AI-assisted development practices.</p>
+          <div class="t-tags"><span>DSA</span><span>Applied AI Development</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <div class="container">
+      <span class="eyebrow reveal">Education</span>
+      <h2 class="reveal">University of Kashmir</h2>
+      <div class="edu-card reveal">
+        <div>
+          <h3>Bachelor's of Computer Applications</h3>
+          <p>Foundational coursework in computer science, programming and applications — the base this data &amp; AI path is built on.</p>
+        </div>
+        <span class="t-period">2022 – 2025</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section id="certifications">
+    <div class="container">
+      <span class="eyebrow reveal">Certifications</span>
+      <h2 class="reveal">Continuous, self-directed learning</h2>
+      <p class="section-intro reveal">Eight credentials earned outside the classroom, across data, SQL and generative AI.</p>
+      <div class="cert-grid">
+        <div class="cert-card reveal">
+          <div class="cert-icon">DA</div>
+          <h3>Data Analytics Job Simulation</h3>
+          <span class="cert-issuer">Deloitte Australia · via Forage</span>
+          <span class="cert-date">Issued Feb 2026</span>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-icon">GA</div>
+          <h3>Career Edge — Generative AI Essentials</h3>
+          <span class="cert-issuer">TCS iON</span>
+          <span class="cert-date">2026</span>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-icon">SQL</div>
+          <h3>SQL and Relational Databases 101</h3>
+          <span class="cert-issuer">IBM · Cognitive Class</span>
+          <span class="cert-date">Issued Jan 2026</span>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-icon">PY</div>
+          <h3>Python for Data Science</h3>
+          <span class="cert-issuer">IBM · Cognitive Class</span>
+          <span class="cert-date">2025</span>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-icon">PE</div>
+          <h3>Prompt Engineering for Everyone</h3>
+          <span class="cert-issuer">IBM · Cognitive Class</span>
+          <span class="cert-date">2025</span>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-icon">PE</div>
+          <h3>Introduction to Prompt Engineering</h3>
+          <span class="cert-issuer">GitHub Copilot</span>
+          <span class="cert-date">2025</span>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-icon">RA</div>
+          <h3>Responsible AI</h3>
+          <span class="cert-issuer">Google Cloud</span>
+          <span class="cert-date">2025</span>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-icon">GM</div>
+          <h3>Generative AI Mastermind</h3>
+          <span class="cert-issuer">Outskill</span>
+          <span class="cert-date">2025</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED PROJECTS -->
+  <section id="work">
+    <div class="container">
+      <span class="eyebrow reveal">Projects</span>
+      <h2 class="reveal">Applied work, end to end</h2>
+      <p class="section-intro reveal">Three projects spanning the workflow — scraping raw data, analyzing it, and putting it in front of a decision-maker.</p>
+      <div class="repo-grid">
+        <div class="repo-card reveal">
+          <h3>E-Commerce Product Data Scraper</h3>
+          <p>Built a multi-page web scraper to extract product names, prices, ratings, reviews and specifications from an e-commerce platform across 10+ pages. Cleaned and structured raw HTML into an analysis-ready DataFrame using regex and Pandas, handling missing values and inconsistent formatting.</p>
+          <div class="t-tags"><span>Python</span><span>BeautifulSoup</span><span>Selenium</span><span>Regex</span><span>Pandas</span></div>
+        </div>
+        <div class="repo-card reveal">
+          <h3>Toyota Used Car Price Analysis</h3>
+          <p>Ran exploratory data analysis on a used-car dataset to identify pricing trends by fuel type, transmission, mileage and vehicle age. Built 8+ visualizations — histograms, boxplots, scatter plots, correlation heatmaps — and applied percentile and correlation analysis to support the findings.</p>
+          <div class="t-tags"><span>Python</span><span>Pandas</span><span>Matplotlib</span><span>Seaborn</span></div>
+        </div>
+        <div class="repo-card reveal">
+          <h3>COVID-19 Global Trends Dashboard</h3>
+          <p>Cleaned and modeled raw global COVID-19 case and death data for accurate reporting. Designed an interactive Power BI dashboard with 7 visual types — line, pie, ribbon, stacked area, clustered column, KPI cards and table — tracking cases and deaths by country, WHO region and time period.</p>
+          <div class="t-tags"><span>Power BI</span><span>DAX</span><span>Data Cleaning</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS / GITHUB -->
+  <section id="projects">
+    <div class="container">
+      <span class="eyebrow reveal">Open Source</span>
+      <h2 class="reveal">Latest from GitHub</h2>
+      <p class="section-intro reveal">Pulled live from <a href="https://github.com/mirzazamin99" target="_blank" rel="noopener noreferrer" style="color:var(--glacier)">github.com/mirzazamin99</a> — code is where the theory gets tested.</p>
+      <p id="repo-status">Loading repositories…</p>
+      <div class="repo-grid" id="repo-grid"></div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <footer class="site" id="contact">
+    <div class="container">
+      <div class="contact-wrap reveal">
+        <div>
+          <span class="eyebrow">Contact</span>
+          <h2>Let's work with data together.</h2>
+        </div>
+        <div class="contact-links">
+          <a href="mailto:mirzazamin99@gmail.com">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+            mirzazamin99@gmail.com
+          </a>
+          <a href="tel:+919541113694">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            +91 95411 13694
+          </a>
+          <a href="https://www.linkedin.com/in/mirzazamin99/" target="_blank" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            linkedin.com/in/mirzazamin99
+          </a>
+          <a href="https://github.com/mirzazamin99" target="_blank" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            github.com/mirzazamin99
+          </a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span id="year"></span> Mirza Zamin. Built with plain HTML &amp; CSS.</span>
+        <span>Jammu &amp; Kashmir, India</span>
+      </div>
+    </div>
+  </footer>
+
+</main>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Reveal on scroll
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const revealEls = document.querySelectorAll('.reveal');
+  if(!reduceMotion && 'IntersectionObserver' in window){
+    const io = new IntersectionObserver((entries)=>{
+      entries.forEach(e=>{
+        if(e.isIntersecting){ e.target.classList.add('in-view'); io.unobserve(e.target); }
+      });
+    }, {threshold:0.15});
+    revealEls.forEach(el=>io.observe(el));
+  } else {
+    revealEls.forEach(el=>el.classList.add('in-view'));
+  }
+
+  // Terminal typing effect
+  const termLines = [
+    {p:'whoami', o:'Mirza Zamin — Data Analytics · AI · ML'},
+    {p:'based_in', o:'Jammu & Kashmir, India'},
+    {p:'stack', o:'Python · SQL · Power BI · Pandas · Seaborn'},
+    {p:'focus', o:'Machine Learning · Generative AI · Prompt Engineering'},
+    {p:'status', o:'Open to work — Hybrid / Remote'}
+  ];
+  const body = document.getElementById('terminal-body');
+
+  function renderStatic(){
+    body.innerHTML = termLines.map(l=>
+      `<div class="term-line"><span class="term-prompt">&gt; ${l.p}</span><br><span class="term-out">${l.o}</span></div>`
+    ).join('');
+  }
+
+  if(reduceMotion){
+    renderStatic();
+  } else {
+    let li = 0;
+    function typeLine(){
+      if(li >= termLines.length) return;
+      const line = termLines[li];
+      const wrap = document.createElement('div');
+      wrap.className = 'term-line';
+      wrap.innerHTML = `<span class="term-prompt">&gt; ${line.p}</span><br><span class="term-out"></span><span class="term-caret"></span>`;
+      body.appendChild(wrap);
+      const out = wrap.querySelector('.term-out');
+      const caret = wrap.querySelector('.term-caret');
+      let ci = 0;
+      (function typeChar(){
+        if(ci < line.o.length){
+          out.textContent += line.o[ci];
+          ci++;
+          setTimeout(typeChar, 18);
+        } else {
+          caret.remove();
+          li++;
+          setTimeout(typeLine, 260);
+        }
+      })();
+    }
+    typeLine();
+  }
+
+  // GitHub repos
+  const repoGrid = document.getElementById('repo-grid');
+  const repoStatus = document.getElementById('repo-status');
+  fetch('https://api.github.com/users/mirzazamin99/repos?sort=updated&per_page=6')
+    .then(res => { if(!res.ok) throw new Error('rate-limited-or-unavailable'); return res.json(); })
+    .then(repos => {
+      const visible = repos.filter(r => !r.fork);
+      if(!visible.length){
+        repoStatus.textContent = 'No public repositories yet — check back soon.';
+        return;
+      }
+      repoStatus.style.display = 'none';
+      repoGrid.innerHTML = visible.slice(0,6).map(r => `
+        <div class="repo-card">
+          <h3>${r.name}</h3>
+          <p>${r.description ? r.description : 'No description provided yet.'}</p>
+          <div class="repo-meta">
+            <span>★ ${r.stargazers_count}</span>
+            <span>${r.language ? r.language : '—'}</span>
+          </div>
+          <a class="btn btn-outline" style="align-self:flex-start; padding:.5rem .9rem; font-size:.82rem;" href="${r.html_url}" target="_blank" rel="noopener noreferrer">View repo →</a>
+        </div>
+      `).join('');
+    })
+    .catch(() => {
+      repoStatus.innerHTML = 'Repositories couldn\'t load right now — see them directly on <a href="https://github.com/mirzazamin99" target="_blank" rel="noopener noreferrer" style="color:var(--glacier)">GitHub</a>.';
+    });
+</script>
+</body>
+</html>
